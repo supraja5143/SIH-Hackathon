@@ -1,0 +1,48 @@
+.profileContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height:auto;
+    width: 90%;
+    margin-left: 5%;
+    flex-wrap: wrap;
+    margin:10;
+    background-color: white;
+    
+}
+.courseCard{
+    height:120px ;
+    width:100px;
+    background-color:white;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border-radius: 15px;
+    /* box-shadow:1px 1px 1px 1px #F6951D; */
+    border:2px solid #F6951D;
+    padding: 30px;
+    
+    
+    
+}
+
+.projectImage{
+    height: 55%;
+    width: 100%;
+    padding-top: 25px;
+    border-radius: 15px;
+    align-items: center;
+    
+}
+.projectInfo{
+height:45% ;
+width: 100%;
+
+align-items: center;
+
+}
+.proName{
+    font-size: 20px;
+}
+.desc{
+    font-size: 17px;
+}

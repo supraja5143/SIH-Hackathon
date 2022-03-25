@@ -1,0 +1,46 @@
+.courseCard{
+    height:250px ;
+    width:200px;
+    background-color: whitesmoke;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border-radius: 15px;
+    padding: 5px;
+    /* box-shadow:5px 1px 3px 2px #F6951D; */
+    
+    
+}
+.classContainer
+{
+    display: flex;
+    flex-direction: row;
+}
+.projectContainer{
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height:auto;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.projectImage{
+    height: 55%;
+    width: 100%;
+    padding-top: 35px;
+    border-radius: 15px;
+}
+.projectInfo{
+height:45% ;
+width: 100%;
+
+align-items: center;
+
+}
+.proName{
+    font-size: 23px;
+}
+.desc{
+    font-size: 20px;
+}
