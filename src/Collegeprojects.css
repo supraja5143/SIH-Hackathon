@@ -1,4 +1,4 @@
-.projectCard{
+.cprojectCard{
     height:250px ;
     width:198px;
     border:2px solid #FFB3BA;
@@ -11,19 +11,19 @@
     
 }
 
-.classContainer
+.cclassContainer
 {
     display: flex;
     flex-direction: row;
     margin-left: 2%;
 }
-.filter{
+.cfilter{
     flex:22%;
     display: flex;
     flex-direction: row;
     
 }
-.projectContainer{
+.cprojectContainer{
     flex:80%;
     
     display: flex;
@@ -34,7 +34,7 @@
     flex-wrap: wrap;
     gap: 30px;
 }
-.projectImage{
+.cprojectImage{
     height: 65%;
     width: 100%;
     justify-content: center;
@@ -43,38 +43,42 @@
     
 
 }
-.projectInfo{
+.cprojectInfo{
 height:45% ;
 width: 100%;
 padding-left: 50px;
 padding-top: 20px;
 
 }
-.proName{
+.cproName{
     font-size: 17px;
     font-family: 'Poppins';
 }
-.desc{
+.cdesc{
     font-size: 17px;
     font-family: 'Poppins';
 
 }
-.labels{
+.clabels{
     color: #005BAB;
     font-Family:'Nirmala UI';
     font-Size:20;
     
 }
-.sort{
+.csort{
     width:60%;
     height:50%;
     border:1px solid #00665C;
 }
-.vl {
+.cvl {
     border-left: 2px solid grey;
     height: 150%;
     position: absolute;
     left: 20%;
-    
-    
-  }
+    }
+ .ccontainer{
+
+    flex:80%;
+    display: flex;
+    flex-direction: column;
+ } 

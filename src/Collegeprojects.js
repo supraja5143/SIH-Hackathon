@@ -13,13 +13,14 @@ import p11 from './p11.png'
 import p12 from './p12.png'
 import p13 from './p13.png'
 import p14 from './p14.png'
+import srkrlogo from './srkrlogo.png'
 
 
 
-import "./project.css";
+import "./Collegeprojects.css";
 
 
-function ProjectCards() {
+function Collegeprojects() {
     
   const Data = [
   {  id : '1',
@@ -95,8 +96,8 @@ function ProjectCards() {
   ]
   
   return (
-      <div className="classContainer">
-       <div className='filter' style={{fontFamily:'Poppins'}}>
+      <div className="cclassContainer">
+       <div className='cfilter' style={{fontFamily:'Poppins'}}>
           <div>
            <p style={{color:'#00665C',fontFamily:'Nirmala UI',fontSize:19,fontWeight:549,}}>Sort by</p>
          
@@ -109,7 +110,7 @@ function ProjectCards() {
     </form>
 
            <p style={{color:'#005BAB',fontFamily:'Nirmala UI',fontSize:20,fontWeight:510}}>Filters</p>
-           <p className="labels">Select University/College</p>
+           <p className="clabels">Select University/College</p>
            <form>
       <select style={{width:220,height:38,borderBlockColor:'#005BAB',borderRadius:5}} >
         <option value="Ford">Ford</option>
@@ -117,7 +118,7 @@ function ProjectCards() {
         <option value="Fiat">Fiat</option>
       </select>
     </form>
-           <p className="labels">Type of Project</p>
+           <p className="clabels">Type of Project</p>
            <form>
               <select style={{width:220,height:38,borderBlockColor:'#005BAB',borderRadius:5}} >
                 <option value="Ford">Ford</option>
@@ -125,41 +126,61 @@ function ProjectCards() {
                 <option value="Fiat">Fiat</option>
               </select>
            </form>
-           <p className="labels">Department</p>
+           <p className="clabels">Department</p>
            <form>
-      <select style={{width:220,height:38,borderBlockColor:'#005BAB',borderRadius:5}} >
-        <option value="Ford">Ford</option>
-        <option value="Volvo">Volvo</option>
-        <option value="Fiat">Fiat</option>
-      </select>
-    </form>
+                <select style={{width:220,height:38,borderBlockColor:'#005BAB',borderRadius:5}} >
+                        <option value="Ford">Ford</option>
+                        <option value="Volvo">Volvo</option>
+                        <option value="Fiat">Fiat</option>
+                </select>
+        </form>
     </div>
-    <div class="vl"></div>
+    <div className="cvl"></div>
        </div>
       
      
-    <div className="projectContainer">
-        {Data.map((item)=>{
-          return(
-            <div className="projectCard">
-          <div className='projectImage'>
-            <img src={item.src} 
-            height="99%"
-            width="100%"
-            // style={{borderRadius:5}}
-            />
+    <div className='ccontainer' >
+           <div style={{display:'flex',flexDirection:'row',justifyContent:'space-around',}}>
+               <div style={{float:'left',display:'flex',justifyContent:'space-around'}}>
+                    <img src={srkrlogo} width={150} height={80} style=
+                    {{
+                        display: 'block',
+                        marginLeft: 'auto',
+                        marginRight:'auto'
+                        
+                    }}  />
+                        <p style={{float:'left'}}>srkr engineering college</p>
           </div>
-          <div className='projectInfo'>
-            <div className='proName'>{item.proName}</div>
-            <div className='desc'> {item.desc}</div>
-          </div>
-        </div>
-        
-          )
-        })}
+          <div style={{float:'left',display:'flex',justifyContent:'space-around'}}>
+               
+                    <button style={{width:140,height:35,borderRadius:30,backgroundColor:'#00665C', border:'none',color:'white'}}>Messages</button>
+                    <button style={{width:140,height:35,borderRadius:30,backgroundColor:'#4169E1', border:'none',color:'white'}}>+Add Project</button>
+          </div>  
+           </div>
+          <p>Your students Projects</p>
+            <div className="cprojectContainer">
+                {Data.map((item)=>{
+                return(
+                    <div className="cprojectCard">
+                        <div className='cprojectImage'>
+                                <img src={item.src} 
+                                height="99%"
+                                width="100%"
+                                // style={{borderRadius:5}}
+                                />
+                        </div>
+                        <div className='cprojectInfo'>
+                                <div className='proName'>{item.proName}</div>
+                                <div className='desc'> {item.desc}</div>
+                        </div>
+                  </div>
+                
+                )
+                })}
 
+        </div>
     </div>
     </div>
   );
 }
-export default ProjectCards;
+export default Collegeprojects;

@@ -1,12 +1,14 @@
 import React, { Component } from 'react'
 import Home from './Home'
-import Projects from './Projectcards'
+import Proreview from './Proreview'
 import './App.css'
 import { Link } from 'react-router-dom'
 import { BrowserRouter as Router,Routes,Route} from 'react-router-dom'
 import {BsSearch} from 'react-icons/bs'
 import Login from './Login'
 import signup from './signup'
+import ProjectCards from './Projectcards'
+import Collegeprojects from './Collegeprojects'
 import Para from './Para'
 
  class App extends Component {
@@ -43,7 +45,7 @@ import Para from './Para'
 
             </nav>
               <Route path='/Home' exact component={Home} />
-              <Route path='/projects' component={Projects} />
+              <Route path='/projects' component={Collegeprojects} />
               <Route path='/About' component={Para} />
               <Route path='/login' component={Login} />
               <Route path='/signup' component={signup} />
