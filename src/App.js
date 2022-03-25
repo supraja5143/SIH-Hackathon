@@ -45,7 +45,7 @@ import Para from './Para'
 
             </nav>
               <Route path='/Home' exact component={Home} />
-              <Route path='/projects' component={Collegeprojects} />
+              <Route path='/projects' component={ProjectCards} />
               <Route path='/About' component={Para} />
               <Route path='/login' component={Login} />
               <Route path='/signup' component={signup} />
