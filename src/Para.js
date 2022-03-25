@@ -10,7 +10,7 @@ import "./Para.css";
 function Para() {
   const Data = [
   {  id : '1',
-     src:avatar1,
+     src:avatar4,
      proName:"Ajay",
      desc:'Ui/Ux',
   },
@@ -25,7 +25,7 @@ function Para() {
      desc:'Backend',
   },
   {  id : '4',
-     src:avatar4,
+     src:avatar1,
      proName:"Bhargavi",
      desc:'Frontend',
   },
@@ -58,16 +58,16 @@ are showcased at a common place. We are also adding a facility for plagiarism, s
       
         {Data.map((item)=>{
           return(
-            <div className="courseCard">
-          <div className='projectImage'>
+            <div className="profileCard">
+          <div className='profileImage'>
             <img src={item.src} 
             height="90%"
             width="80%"
             />
           </div>
-          <div className='projectInfo'>
-            <div className='proName'>{item.proName}</div>
-            <div className='desc'> {item.desc}</div>
+          <div className='profileInfo'>
+            <div className='Name'>{item.proName}</div>
+            <div className='work'> {item.desc}</div>
           </div>
         </div>
         
