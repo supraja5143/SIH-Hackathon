@@ -1,0 +1,11 @@
+.center{
+    text-align: center;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-width: 10px;
+    border: 10px 10px 10px 10px ;
+    border-color: blue;
+    margin-top: 100px;
+  }

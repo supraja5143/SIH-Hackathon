@@ -6,9 +6,6 @@ import { useHistory } from "react-router-dom";
 import './App.css'
 import login from './login.png'
 
-<<<<<<< HEAD
-function signup() {
-=======
 function Signup() {
   const [email, setEmail] = useState("");
   const [psd, setPsd] = useState("");
@@ -27,7 +24,6 @@ function Signup() {
         const errorMessage = error.message;
       });
   };
->>>>>>> 1a2d7252378abdc076b653e7d6598cc732b0d173
   return (
     <div className='main'>
         <div className='image'>
@@ -52,8 +48,4 @@ function Signup() {
   )
 }
 
-<<<<<<< HEAD
-export default signup
-=======
 export default Signup
->>>>>>> 1a2d7252378abdc076b653e7d6598cc732b0d173

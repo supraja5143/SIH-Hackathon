@@ -6,17 +6,16 @@ import { Link } from 'react-router-dom'
 import { BrowserRouter as Router,Routes,Route} from 'react-router-dom'
 import {BsSearch} from 'react-icons/bs'
 import Login from './Login'
-import Signup from './signup'
+import Signup from './Signup'
 import ProjectCards from './Projectcards'
 import Collegeprojects from './Collegeprojects'
 import Para from './Para'
-<<<<<<< HEAD
-import upload from './Success'
-=======
+
 import Search from './search'
->>>>>>> 1a2d7252378abdc076b653e7d6598cc732b0d173
 import Carousel from './Carousel'
 import Success from './Success'
+import Failed from './Failed'
+import Upload from './upload'
 
 
  class App extends Component {
@@ -56,7 +55,7 @@ import Success from './Success'
 
             <Route path='/Home' exact element={<Home/>} />
               <Route path='/projects' element={<ProjectCards/>} />
-              <Route path='/About' element={<Para/>} />
+              <Route path='/About' element={<Upload/>} />
               <Route path='/login' element={<Login/>} />
               <Route path='/signup' element={<Signup/>} />
             </Routes>
