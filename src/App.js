@@ -10,9 +10,12 @@ import Signup from './signup'
 import ProjectCards from './Projectcards'
 import Collegeprojects from './Collegeprojects'
 import Para from './Para'
+
 import Search from './search'
 import Carousel from './Carousel'
-//import Collegeprojects from './Collegeprojects';
+import Success from './Success'
+import Failed from './Failed'
+import Upload from './upload'
 
 
  class App extends Component {
@@ -52,7 +55,7 @@ import Carousel from './Carousel'
 
             <Route path='/Home' exact element={<Home/>} />
               <Route path='/projects' element={<ProjectCards/>} />
-              <Route path='/About' element={<Para/>} />
+              <Route path='/About' element={<Upload/>} />
               <Route path='/login' element={<Login/>} />
               <Route path='/signup' element={<Signup/>} />
               <Route path='/Collegeprojects' element={<Collegeprojects/>} />

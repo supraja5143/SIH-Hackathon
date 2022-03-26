@@ -17,6 +17,7 @@ import {useState, Component} from 'react'
 import "./project.css";
 import db from "./firebase.js";
 import {getFirestore,collection, query, onSnapshot, getDocs} from 'firebase/firestore'
+import { doc, setDoc } from "firebase/firestore";
 import { orderBy } from "firebase/firestore";
 
 function ProjectCards() {
