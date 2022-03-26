@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^13.5.0",
     "@types/react-select": "^5.0.1",
     "card": "^2.5.4",
+    "firebase": "^9.6.10",
     "react": "^17.0.2",
     "react-bootstrap-validation": "^0.1.11",
     "react-countup": "^6.1.1",
