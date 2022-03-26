@@ -1,0 +1,44 @@
+.mContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height:auto;
+    width: 90%;
+    margin-left: 5%;
+    flex-wrap: wrap;
+    margin:10;
+    background-color: white;
+    
+}
+.mCard{
+    height:42px;
+    width:100%;
+    background-color:white;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border-radius: 15px;
+    /* box-shadow:1px 1px 1px 1px #F6951D; */
+    border:2px solid whitesmoke;
+    padding: 20px;
+    box-shadow: 1px 1px 1px 1px whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    
+    
+    
+}
+
+
+.minfo{
+margin-bottom: 25px;
+
+
+}
+.mName{
+    font-size: 15px;
+}
+.mwork{
+    font-size: 12px;
+}

@@ -2,7 +2,7 @@ import React from 'react'
 import './App.css'
 import login from './login.png'
 
-function Login() {
+function signup() {
   return (
     <div className='main'>
         <div className='image'>
@@ -27,4 +27,4 @@ function Login() {
   )
 }
 
-export default Login
+export default signup

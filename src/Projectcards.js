@@ -92,6 +92,16 @@ function ProjectCards() {
      proName:"project Name",
      desc:'college Name',
   },
+  {  id : '14',
+  src:p14,
+  proName:"project Name",
+  desc:'college Name',
+},
+{  id : '14',
+src:p14,
+proName:"project Name",
+desc:'college Name',
+},
   ]
   
   return (

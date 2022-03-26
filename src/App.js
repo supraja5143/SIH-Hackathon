@@ -6,11 +6,13 @@ import { Link } from 'react-router-dom'
 import { BrowserRouter as Router,Routes,Route} from 'react-router-dom'
 import {BsSearch} from 'react-icons/bs'
 import Login from './Login'
-import signup from './signup'
+import Signup from './signup'
 import ProjectCards from './Projectcards'
 import Collegeprojects from './Collegeprojects'
 import Para from './Para'
+import upload from './Success'
 import Carousel from './Carousel'
+import Success from './Success'
 
 
  class App extends Component {
@@ -18,8 +20,7 @@ import Carousel from './Carousel'
     const navstyle={
       color: 'white',
       textDecoration:'none'
-
-  };
+    }
     return (
       <Router>
       <div className="App">
@@ -46,13 +47,21 @@ import Carousel from './Carousel'
                 </ul>
 
             </nav>
-              <Route path='/Home' exact component={Home} />
-              <Route path='/projects' component={ProjectCards} />
-              <Route path='/About' component={Para} />
-              <Route path='/login' component={Login} />
-              <Route path='/signup' component={signup} />
+            <Routes>
+            <Route path='/' exact element={<Home/>} />
+
+            <Route path='/Home' exact element={<Home/>} />
+              <Route path='/projects' element={<ProjectCards/>} />
+              <Route path='/About' element={<Success/>} />
+              <Route path='/login' element={<Login/>} />
+              <Route path='/signup' element={<Signup/>} />
+            </Routes>
+              
       </div>
       </Router>
+      // <div>
+      //   <Search/>
+      // </div>
     )
   }
 }
