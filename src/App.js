@@ -12,6 +12,7 @@ import Collegeprojects from './Collegeprojects'
 import Para from './Para'
 import Search from './search'
 import Carousel from './Carousel'
+//import Collegeprojects from './Collegeprojects';
 
 
  class App extends Component {
@@ -54,6 +55,7 @@ import Carousel from './Carousel'
               <Route path='/About' element={<Para/>} />
               <Route path='/login' element={<Login/>} />
               <Route path='/signup' element={<Signup/>} />
+              <Route path='/Collegeprojects' element={<Collegeprojects/>} />
             </Routes>
               
       </div>

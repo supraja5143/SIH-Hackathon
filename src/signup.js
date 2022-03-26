@@ -1,5 +1,6 @@
 import React, { Component, useState } from "react";
 import ReactDOM from "react-dom";
+import {useNavigate} from 'react-router-dom'
 import "./firebase.js";
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import { useHistory } from "react-router-dom";
@@ -9,6 +10,7 @@ import login from './login.png'
 function Signup() {
   const [email, setEmail] = useState("");
   const [psd, setPsd] = useState("");
+  const navigate = useNavigate();
   const signUp = () => {
     console.log("hii");
     const auth = getAuth();
@@ -17,6 +19,7 @@ function Signup() {
         // Signed in
         console.log("user authenticated");
         const user = userCredential.user;
+        navigate('/login')
         console.log("user authenticated");
       })
       .catch((error) => {
