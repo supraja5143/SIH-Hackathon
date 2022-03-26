@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 import { BrowserRouter as Router,Routes,Route} from 'react-router-dom'
 import {BsSearch} from 'react-icons/bs'
 import Login from './Login'
-import Signup from './Signup'
+import Signup from './signup'
 import ProjectCards from './Projectcards'
 import Collegeprojects from './Collegeprojects'
 import Para from './Para'
@@ -59,7 +59,7 @@ import Messages from './Messages'
               <Route path='/About' element={<Removeproject />} />
               <Route path='/login' element={<Login/>} />
               <Route path='/signup' element={<Signup/>} />
-              <Route path='/messages' element={<Messages />} />
+              <Route path='/Collegeprojects' element={<Collegeprojects/>} />
             </Routes>
               
       </div>

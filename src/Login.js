@@ -20,7 +20,7 @@ function Login() {
       .then((userCredential) => {
         // Signed in 
         const user = userCredential.user;
-       navigate('/projects');
+       navigate('/Collegeprojects');
         // ...
       })
       .catch((error) => {
