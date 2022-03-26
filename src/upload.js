@@ -22,6 +22,8 @@ function Upload() {
         <div className='form2'>
             <div className='f3'>
             <p style={{color:'#2B5980',fontSize:25,fontFamily:'Nirmala UI'}}>Enter project details</p>
+            <p style={{fontFamily:'Nirmala UI',fontSize:15,letterSpacing:0.8,color:'grey'}}>college Name:</p>
+            <input type="text" name="name"  className='in2'  style={{letterSpacing:1.5}}/>
             <p style={{fontFamily:'Nirmala UI',fontSize:15,letterSpacing:0.8,color:'grey'}}>Project Name:</p>
             <input type="text" name="name"  className='in2'  style={{letterSpacing:1.5}}/>
             <p style={{fontFamily:'Nirmala UI',fontSize:15,letterSpacing:0.8,color:'grey'}}>Team Name:</p>
@@ -44,7 +46,7 @@ function Upload() {
             <button type="submit" className='btn3' style={{letterSpacing:1.8}}>Upload</button>
         </div>
         <div className='image1'>
-            <img src={login} width={650} height={500} />
+            <img src={login} width={550} height={400} />
         </div>
         </div>
     </div>

@@ -46,8 +46,8 @@ accept:'Accept'
   return (
     <div>
        <div style={{display:'flex',flexDirection:'row',}}>
-               <div  className='bt1' style={{float:'left',marginLeft:60}}>
-                    <img src={srkrlogo} width={110} height={60}  />
+               <div  className='bt1' style={{float:'left'}}>
+                    <img src={srkrlogo} width={150} height={80}  />
                         <p style={{float:'left'}}>Srkr engineering college</p>
           </div>
           </div>

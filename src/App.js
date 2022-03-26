@@ -10,12 +10,13 @@ import Signup from './Signup'
 import ProjectCards from './Projectcards'
 import Collegeprojects from './Collegeprojects'
 import Para from './Para'
-
+import Removeproject from './Removeproject'
 import Search from './search'
 import Carousel from './Carousel'
 import Success from './Success'
 import Failed from './Failed'
 import Upload from './upload'
+import Messages from './Messages'
 
 
  class App extends Component {
@@ -55,9 +56,10 @@ import Upload from './upload'
 
             <Route path='/Home' exact element={<Home/>} />
               <Route path='/projects' element={<ProjectCards/>} />
-              <Route path='/About' element={<Upload/>} />
+              <Route path='/About' element={<Removeproject />} />
               <Route path='/login' element={<Login/>} />
               <Route path='/signup' element={<Signup/>} />
+              <Route path='/messages' element={<Messages />} />
             </Routes>
               
       </div>

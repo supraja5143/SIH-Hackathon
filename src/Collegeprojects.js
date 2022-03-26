@@ -14,6 +14,7 @@ import p12 from './p12.png'
 import p13 from './p13.png'
 import p14 from './p14.png'
 import srkrlogo from './srkrlogo.png'
+import {Link} from 'react-router-dom'
 
 
 
@@ -147,7 +148,7 @@ function Collegeprojects() {
           </div>
           <div className="bt" style={{float:'left',display:'flex',justifyContent:'space-around'}}>
                
-                    <button style={{width:140,height:35,borderRadius:30,backgroundColor:'#00665C', border:'none',color:'white'}}>Messages</button>
+                <Link to='/messages'>    <button style={{width:140,height:35,borderRadius:30,backgroundColor:'#00665C', border:'none',color:'white'}}>Messages</button></Link>
                     <button style={{width:140,height:35,borderRadius:30,backgroundColor:'#4169E1', border:'none',color:'white'}}>+Add Project</button>
           </div>  
            </div>

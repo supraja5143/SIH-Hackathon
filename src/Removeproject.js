@@ -4,7 +4,7 @@ import p1 from './p1.png'
 
 
 
-function Proreview() {
+function Removeproject() {
   
   return (
     <div style={{display:'flex',flexDirection:'row',paddingTop:30}}>
@@ -22,7 +22,11 @@ function Proreview() {
      </div>
 <div style={{borderLeft:' 2px solid grey',height: '150%',position:'absolute',left: '60%'}}></div>
         <div style={{flex:'40%',marginLeft:125}}>
-        
+        <div className="bt" style={{float:'right',display:'flex'}}>
+               
+              
+               <button style={{width:140,height:35,borderRadius:30,backgroundColor:'#D11A2A', border:'none',color:'white'}}>Removeproject</button>
+     </div> 
           <p style={{textAlign:'center',color:'#005BAB',fontFamily:'Nirmala UI',fontSize:25}}>Sensor Based Car</p>
           <img src={srkrlogo} width={150} height={80} style=
           {{
@@ -56,4 +60,4 @@ function Proreview() {
   )
 }
 
-export default Proreview
+export default Removeproject
