@@ -6,7 +6,7 @@ import { useHistory } from "react-router-dom";
 import './App.css'
 import login from './login.png'
 
-function Login() {
+function Signup() {
   const [email, setEmail] = useState("");
   const [psd, setPsd] = useState("");
   const signUp = () => {
@@ -48,4 +48,4 @@ function Login() {
   )
 }
 
-export default Login
+export default Signup

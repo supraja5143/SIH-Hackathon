@@ -23,13 +23,13 @@ function Search(){
         setUsersData([{}])
         console.log("getdata")
            try {
-             const docRef1 = addDoc(collection(db, "new-users"), {
+             const docRef1 = addDoc(collection(db, "sih-users"), {
                collegeName:clgname,
                projectName:projectname
              }).then(async() =>{
                 // usersData=[]
                 // setUsersData(usersData)
-                const q = query(collection(db, "new-users"));
+                const q = query(collection(db, "sih-users"));
                 const querySnapshot = await getDocs(q);
                 console.log("querySnapshot",querySnapshot.docs);
                 querySnapshot.forEach((doc) => {

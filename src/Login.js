@@ -1,5 +1,7 @@
 import React, { Component, useState } from "react";
 import ReactDOM from "react-dom";
+import {useNavigate} from 'react-router-dom'
+import ProjectCards from './Projectcards.js'
 import "./firebase.js";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import './App.css'
@@ -7,17 +9,18 @@ import login from './login.png'
 import { Link } from 'react-router-dom'
 
 function Login() {
+
   const [err, seterr] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
   const signIn=()=>{
     const auth = getAuth();
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         // Signed in 
         const user = userCredential.user;
-        console.log(user);
-        console.log("hii");
+       navigate('/projects');
         // ...
       })
       .catch((error) => {
