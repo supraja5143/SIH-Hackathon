@@ -20,6 +20,8 @@
     /* box-shadow:1px 1px 1px 1px #F6951D; */
     border:2px solid #F6951D;
     padding: 30px;
+    box-shadow: 1.5px 1.5px #EAC79B;
+    
     
     
     
@@ -28,16 +30,20 @@
 .profileImage{
     height: 55%;
     width: 100%;
-    padding-top: 25px;
+    padding-top: 8px;
     border-radius: 15px;
-    align-items: center;
+    padding-left: 8px;
+
+
+    
     
 }
 .profileInfo{
 height:45% ;
 width: 100%;
-
+padding-left: 18px;
 align-items: center;
+padding-top: 5px;
 
 }
 .Name{

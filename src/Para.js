@@ -10,7 +10,7 @@ import "./Para.css";
 function Para() {
   const Data = [
   {  id : '1',
-     src:avatar4,
+     src:avatar3,
      proName:"Ajay",
      desc:'Ui/Ux',
   },
@@ -20,8 +20,8 @@ function Para() {
      desc:'Backend',
   },
   {  id : '3',
-     src:avatar3,
-     proName:"SivaShankar",
+     src:avatar4,
+     proName:"Shankar",
      desc:'Backend',
   },
   {  id : '4',
@@ -43,8 +43,8 @@ function Para() {
   return (
     <div>
         <div style={{display:'flex',flexDirection:'column',alignItems:'center',}}>
-          <p style={{fontSize:25,fontFamily:'Poppins'}}>What is this platform for?</p>
-       <p style={{color:'#A4A4A4',fontSize:22,marginTop:2,fontFamily:'Poppins',lineHeight:1.4}}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Our idea is to develop a online integrated platform where in all Universities/Colleges<br></br>
+          <p style={{fontSize:22,fontFamily:'Poppins'}}>What is this platform for?</p>
+       <p style={{color:'#A4A4A4',fontSize:20,marginTop:2,fontFamily:'Poppins',lineHeight:1.4}}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Our idea is to develop a online integrated platform where in all Universities/Colleges<br></br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;provide information of the projects done by their students. For this, Our team planned<br></br> 
 an interactive website where all the projects done by the students of various Universities/Colleges<br></br>
 are showcased at a common place. We are also adding a facility for plagiarism, so that students<br></br>
@@ -53,7 +53,7 @@ are showcased at a common place. We are also adding a facility for plagiarism, s
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;between various Universities/Colleges
         </p>
         </div>
-        <p style={{marginLeft:70,fontSize:20,fontWeight:800,float:'left'}}>Developers</p>
+        <p style={{marginLeft:120,fontSize:22,fontWeight:400,float:'left'}}>Developers</p>
     <div className="profileContainer">
       
         {Data.map((item)=>{

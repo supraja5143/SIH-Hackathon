@@ -1,0 +1,69 @@
+.hprofileCard{
+    height:250px ;
+    width:210px;
+    
+    margin-top: 25px;
+    margin-bottom: 8px;
+    border-radius: 15px;
+    background-color: #F6951D;
+    
+    
+    /* box-shadow:5px 1px 3px 2px #F6951D; */
+    
+    
+}
+
+
+
+.hContainer{
+    flex:80%;
+    background-color:#FFDFBA;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height:350px;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.hprofileImage{
+    height: 75%;
+    width: 100%;
+    border-radius: 15px;
+    
+    
+    
+
+}
+.hprofileInfo{
+height:25% ;
+width: 100%;
+padding-left: 50px;
+padding-top: 5px;
+/* background-color: blue; */
+
+
+}
+.hName{
+    font-size: 15px;
+    font-family: 'Nirmala UI';
+    color: white;
+    font-weight: 540;
+}
+.hwork{
+    font-size: 15px;
+    font-family: 'Nirmala UI';
+    color: white;
+    font-weight: 540;
+
+}
+.himg
+{
+   border-top-left-radius: 15px;
+   border-top-right-radius: 15px;
+}
+
+
+
+
+

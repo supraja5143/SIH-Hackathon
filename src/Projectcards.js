@@ -143,7 +143,8 @@ function ProjectCards() {
           return(
             <div className="projectCard">
           <div className='projectImage'>
-            <img src={item.src} 
+            <img src={item.src}
+            className="pimg"
             height="99%"
             width="100%"
             // style={{borderRadius:5}}

@@ -141,17 +141,11 @@ function Collegeprojects() {
      
     <div className='ccontainer' >
            <div style={{display:'flex',flexDirection:'row',justifyContent:'space-around',}}>
-               <div style={{float:'left',display:'flex',justifyContent:'space-around'}}>
-                    <img src={srkrlogo} width={150} height={80} style=
-                    {{
-                        display: 'block',
-                        marginLeft: 'auto',
-                        marginRight:'auto'
-                        
-                    }}  />
+               <div  className='bt1' tyle={{float:'left'}}>
+                    <img src={srkrlogo} width={150} height={80}  />
                         <p style={{float:'left'}}>srkr engineering college</p>
           </div>
-          <div style={{float:'left',display:'flex',justifyContent:'space-around'}}>
+          <div className="bt" style={{float:'left',display:'flex',justifyContent:'space-around'}}>
                
                     <button style={{width:140,height:35,borderRadius:30,backgroundColor:'#00665C', border:'none',color:'white'}}>Messages</button>
                     <button style={{width:140,height:35,borderRadius:30,backgroundColor:'#4169E1', border:'none',color:'white'}}>+Add Project</button>
@@ -164,9 +158,10 @@ function Collegeprojects() {
                     <div className="cprojectCard">
                         <div className='cprojectImage'>
                                 <img src={item.src} 
-                                height="99%"
+                                className='cimg'
+                                height="100%"
                                 width="100%"
-                                // style={{borderRadius:5}}
+                                 
                                 />
                         </div>
                         <div className='cprojectInfo'>

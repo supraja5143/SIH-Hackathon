@@ -10,6 +10,8 @@ import signup from './signup'
 import ProjectCards from './Projectcards'
 import Collegeprojects from './Collegeprojects'
 import Para from './Para'
+import Carousel from './Carousel'
+
 
  class App extends Component {
   render() {
